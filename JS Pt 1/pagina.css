@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+  
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(54, 86, 116);
+    position: absolute;
+    text-align: center;
+
+}
+
+#ex1{
+    text-align: center;
+    top:10px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho</title>
+    <link rel="stylesheet" href="./pagina.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Selecione um produto:</h1>
+        <div>
+            <button onclick="selecionarProduto('refrigerante')">Refrigerante</button>
+            <button onclick="selecionarProduto('sorvete')">Sorvete</button>
+            <button onclick="selecionarProduto('suco')">Suco</button>
+            <button onclick="selecionarProduto('Nenhum')">Nenhum</button>
+        </div>
+        <h2>
+            <p id="mensagem"></p>
+        </h2>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main>
+
+        <form>
+            <h1>Realize uma Subtração:</h1><br>
+            <label for="valor1">Valor 1:</label>
+            <input type="number" id="valor1" name="valor1">
+            <br>
+            <label for="valor2">Valor 2:</label>
+            <input type="number" id="valor2" name="valor2">
+            <br>
+            <h2><button type="button" onclick="subtrair()">Subtrair</button></h2>
+            <h2 id="resultado"></h2>
+        </form>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main>
+        <form>
+            <h1>Realize uma Divisão:</h1><br>
+            <label for="num1">Numero 1:</label>
+            <input type="number" id="num1" name="num1">
+            <br>
+            <label for="num2">Numero 2:</label>
+            <input type="number" id="num2" name="num2">
+            <br>
+            <h2> <button type="button" onclick="dividir()">Dividir</button></h2>
+            <h2>
+                <p id="resposta"></p>
+                <p id="erro"></p>
+            </h2>
+        </form>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main>
+
+        <h1>Loop de números de 0 a 1000 no console</h1>
+        <h2> <button type="button" onclick="gerarnum()">Iniciar Números</button></h2>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main>
+
+        <h1>Imprimindo objeto com as informações do Usuário</h1>
+        <h2> <button type="button" onclick="imprimir()">Imprimir</button></h2>
+        <div id="informacoes"></div>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main>
+        <h1>Mostrando mensagem no console e no alert</h1>
+        <button type="button" onclick="exibir()">Clique aqui para exibir o valor da constante</button>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main>
+        <h1>Calculando a avaliacao do aluno</h1>
+        <label for="nota">Nota:</label>
+        <input type="number" id="nota" name="nota">
+        <button type="button" onclick="calcular()">Calcular a avaliação Final</button>
+        <div id="avaliacaofinal"></div>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+</body>
+
+</html>

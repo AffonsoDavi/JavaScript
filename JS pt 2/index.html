@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script parte 2</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+    <main id="ex1">
+        <h1>Crie uma função que receba uma sequencia de números e retorne o valor máximo</h1>
+        <label for="numeros">Digite os números separados por uma vírgula</label><br>
+        <input type="text" id="numeros" name="numeros"><br>
+        <button type="button" onclick="numeroMaior()">Verificar o Maior</button>
+        <p>O Número maior é: <span id="maximo"></span></p>
+
+    </main>
+    <h2>--------------------------------------------------------------------------------------</h2>
+    <main id="ex2">
+        <h1>Contador de caracteres</h1>
+        <label for="strings">Digite palavras ou letras:</label><br>
+        <input type="text" id="strings" name="strings"><br>
+        <button type="button" onclick="contaCaracteres()">Contar caracteres</button>
+        <p>O total de carcateres é: <span id="resultado"></span></p>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main id="ex3">
+        <h1>Busca de e-mail</h1>
+
+        <label for="nome">Insira o nome da pessoa :</label>
+        <input type="text" id="nome"><br>
+        <label for="email">Insira o e-mail da pessoa:</label>
+        <input type="email" id="email"><br><br>
+
+        <button type="button" onclick="adicionaPessoa()">Adicionar pessoa</button><br>
+
+        <label for="busca">Insira o nome da pessoa para buscar o e-mail:</label>
+        <input type="text" id="busca"><br><br>
+
+        <button type="button" onclick="buscaEmail()">Buscar e-mail</button>
+        <div id="emailAchado"></div>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main id="ex4">
+        <h1>Verificação de frutas</h1>
+        <label for="fruta">Insira uma fruta:</label><br>
+        <input type="text" id="fruta"><br><br>
+        <button onclick="verificarFruta()">Verificar</button>
+        <p id="conferir"></p>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main id="ex5">
+        <h1>Dobro de um número</h1>
+        <label for="numero">Insira um número:</label><br>
+        <input type="number" id="numero"><br><br>
+        <button onclick="calcularDobro()">Calcular dobro</button>
+        <p id="dobro"></p>
+    </main>
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+
+    <main id="ex6">
+        <h1>Dobro de números</h1>
+        <label for="num">Insira uma sequencia de numeros separados por vírgula:</label><br>
+        <input type="text" id="num"><br><br>
+        <button onclick="calcularDobros()">Calcular dobro</button>
+        <p id="resultados"></p>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main id="ex7">
+        <h1>Digite um animal da lista a seguir</h1>
+        <p> Leão, Elefante, Girafa, Tigre ou Macaco </p>
+        <label for="animal">Digite o nome do animal:</label><br>
+        <input type="text" id="animal"><br><br>
+        <button onclick="encontrar()">Encontrar Aniaml</button>
+        <div id="animalEcontrado"></div>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main id="ex8">
+        <h1>Tranformando minuscula em maisucula</h1>
+        <label for="texto">Digite um texto:</label><br>
+        <input type="text" id="texto"><br><br>
+        <button onclick="converter()">Converter para maiúsculas</button>
+        <div id="maiuscula"></div>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main id="ex9">
+        <h1>Transformando uma variavel em uma nova variavel</h1>
+        <label for="variavel">Insira o valor da variável:</label><br>
+        <input type="text" id="variavel"><br><br>
+        <button type="button" onclick="armazenaVariavel()">Armazenar variável</button>
+        <p>Novo valor da variável: <span id="novoValor"></span></p>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+    <h2>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EXERCICIOS EXTRAS>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h2>
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main id="ex1 extra">
+        <h1>Contando vogais de uma frase</h1>
+        <label for="stringInserida">Insira uma Frase:</label><br>
+        <input type="text" id="stringInserida"><br><br>
+        <button type="button" onclick="contaVogais()">Contar vogais</button><br>
+        <p>O número de vogais na string é: <span id="numVogais"></span></p>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main id="ex2 extra">
+        <h1>Calculando fatorial de um numero</h1>
+        <label for="numInserido">Insira um número:</label><br>
+        <input type="number" id="numInserido"><br><br>
+        <button type="button" onclick="calculaFatorial()">Calcular fatorial</button>
+        <p>O fatorial do número é: <span id="fatorial"></span></p>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main id="ex3 extra">
+        <h1>Validando nome e e-mail</h1>
+        <form name="frmInscr" onsubmit="return validaInscricao()">
+            <label for="nome">Nome: </label>
+            <input type="text" name="txtnome" id="nome"><br />
+            <label for="email">E-mail:</label>
+            <input type="email" name="txtemail" id="email"><br />
+            <button type="submit">Enviar</button>
+        </form>
+
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+
+    <main id="ex4 extra">
+        <h1>Validando idade e altura</h1>
+        <form name="frmInscricao" onsubmit="return validaIdadeAltura()">
+            <label for="idade">Idade : </label>
+            <input type="number" name="txtidade" id="idade"><br />
+            <label for="altura">Altura em centimetros:</label>
+            <input type="number" name="txtaltura" id="altura"><br />
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <h2>--------------------------------------------------------------------------------------</h2>
+</body>
+
+</html>
